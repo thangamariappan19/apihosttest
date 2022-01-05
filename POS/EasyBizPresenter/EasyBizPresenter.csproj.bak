@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A065100-2F7D-429C-B822-72A7C75D9C22}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyBizPresenter</RootNamespace>
+    <AssemblyName>EasyBizPresenter</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Mvvm.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BarCodeGenerator.cs" />
+    <Compile Include="Common\DynamicProperty.cs" />
+    <Compile Include="DashBoard\DashBoardViewerPresenter.cs" />
+    <Compile Include="DashBoard\RegisterDashboardPresenter.cs" />
+    <Compile Include="Import\ImportPresenter.cs" />
+    <Compile Include="Masters\AgentMasterPresenter.cs" />
+    <Compile Include="Masters\AllocationTypeMasterPresenter.cs" />
+    <Compile Include="Masters\BarcodeSettingsPresenter.cs" />
+    <Compile Include="Masters\BrandDivisionMapPresenter.cs" />
+    <Compile Include="Masters\CollectionMasterPresenter.cs" />
+    <Compile Include="Masters\DesignationMasterPresenter.cs" />
+    <Compile Include="Masters\DesignMasterPresenter.cs" />
+    <Compile Include="Masters\DropMasterPresenter.cs" />
+    <Compile Include="Masters\AFSegamationMasterPresenter.cs" />
+    <Compile Include="Masters\ColorMasterPresenter.cs" />
+    <Compile Include="Masters\DivisionMasterPresenter.cs" />
+    <Compile Include="Masters\DocumentNumberingPresenter.cs" />
+    <Compile Include="Masters\DocumentTypePresenter.cs" />
+    <Compile Include="Masters\EmployeeMasterPresenter.cs" />
+    <Compile Include="Masters\ExchangeRatePresenter.cs" />
+    <Compile Include="Masters\ExpenseMasterPresenter.cs" />
+    <Compile Include="Masters\FaranchiseMasterPresenter.cs" />
+    <Compile Include="Masters\FreightMasterPresenter.cs" />
+    <Compile Include="Masters\LabelPrinitingMasterPresenter.cs" />
+    <Compile Include="Masters\LogInPresenter.cs" />
+    <Compile Include="Masters\ManagerOverridePresenter.cs" />
+    <Compile Include="Masters\OrderTypeMasterPresenter.cs" />
+    <Compile Include="Masters\PasswordResetPresenter.cs" />
+    <Compile Include="Masters\PaymentTypeMasterPresenter.cs" />
+    <Compile Include="Masters\PosMasterPresenter.cs" />
+    <Compile Include="Masters\CustomerMasterPresenter.cs" />
+    <Compile Include="Masters\LanguagePresenter.cs" />
+    <Compile Include="Masters\PrevilegesPresenter.cs" />
+    <Compile Include="Masters\PriceListMasterPresenter.cs" />
+    <Compile Include="Masters\PriceTypeMasterPresenter.cs" />
+    <Compile Include="Masters\ProductGroupPresenter.cs" />
+    <Compile Include="Masters\BrandMasterPresenter.cs" />
+    <Compile Include="Masters\ProductLineMasterPresenter.cs" />
+    <Compile Include="Masters\ProductSubGroupPresenter.cs" />
+    <Compile Include="Masters\ReasonMasterPresenter.cs" />
+    <Compile Include="Masters\RequestTypeMasterPresenter.cs" />
+    <Compile Include="Masters\RetailPresenter.cs" />
+    <Compile Include="Masters\SalesLabelPrintingPresenter.cs" />
+    <Compile Include="Masters\ScaleMasterPresenter.cs" />
+    <Compile Include="Masters\SeasonPresenter.cs" />
+    <Compile Include="Masters\SegmantMasterPresenter.cs" />
+    <Compile Include="Masters\ShiftMasterPresenter.cs" />
+    <Compile Include="Masters\SKUMasterPresenter.cs" />
+    <Compile Include="Masters\StoreGroupMasterPresenter.cs" />
+    <Compile Include="Masters\StoreMasterPresenter.cs" />
+    <Compile Include="Masters\StylePresenter.cs" />
+    <Compile Include="Masters\StyleStatusMasterPresenter.cs" />
+    <Compile Include="Masters\SubBrandMasterPresenter.cs" />
+    <Compile Include="Masters\SubCollectionMasterPresenter.cs" />
+    <Compile Include="Masters\SubSeasonMasterPresenter.cs" />
+    <Compile Include="Masters\TailoringMasterPresenter.cs" />
+    <Compile Include="Masters\TaxMasterPresenter.cs" />
+    <Compile Include="Masters\TillSettingsPresenter.cs" />
+    <Compile Include="Masters\UsersMasterPresenter.cs" />
+    <Compile Include="Masters\WarehouseMasterPresenter.cs" />
+    <Compile Include="Masters\WarehouseTypeMasterPresenter.cs" />
+    <Compile Include="Masters\CountryPresenter.cs" />
+    <Compile Include="Masters\CurrencyPresenter.cs" />
+    <Compile Include="Masters\RolePresenter.cs" />
+    <Compile Include="Masters\CompanySettingPresenter.cs" />
+    <Compile Include="Masters\CustomerGroupPresenter.cs" />
+    <Compile Include="Masters\StateMasterPresenter.cs" />
+    <Compile Include="Masters\VendorGroupPresenter.cs" />
+    <Compile Include="Masters\VendorPresenter.cs" />
+    <Compile Include="Masters\YearMasterPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CashierWiseReportPresenter.cs" />
+    <Compile Include="Reports\CurrentStoctReportPresenter.cs" />
+    <Compile Include="Reports\DailySalesReportPresenter.cs" />
+    <Compile Include="Reports\DayWiseActivitiesReportPresenter.cs" />
+    <Compile Include="Reports\DaywisePresenter.cs" />
+    <Compile Include="Reports\DayWiseTransaction\DayWiseTransactionReportPresenter.cs" />
+    <Compile Include="Reports\DayWiseTransaction\InvoiceTransactionReportPresenter.cs" />
+    <Compile Include="Reports\DayWiseTransaction\SalesExchangeTransactionReportPresenter.cs" />
+    <Compile Include="Reports\DayWiseTransaction\SalesReturnTransactionReportPresenter.cs" />
+    <Compile Include="Reports\DayWiseTransaction\StockAdjustmentTransactionReportPresenter.cs" />
+    <Compile Include="Reports\DayWiseTransaction\StockReceiptTransactionReportPresenter.cs" />
+    <Compile Include="Reports\DayWiseTransaction\StockReturnTransactionReportPresenter.cs" />
+    <Compile Include="Reports\DetailedShowroomSalesPresenter.cs" />
+    <Compile Include="Reports\DetailedStockReturnReportPresenter.cs" />
+    <Compile Include="Reports\DetailSalesReportPresenter.cs" />
+    <Compile Include="Reports\DetailSalesReturnReportPresenter.cs" />
+    <Compile Include="Reports\DetailStockReceiptReportPresenter.cs" />
+    <Compile Include="Reports\SalesmanWiseReportPresenter.cs" />
+    <Compile Include="Reports\StockMovementReportPresenter.cs" />
+    <Compile Include="Reports\StockReceiptReportPresenter.cs" />
+    <Compile Include="Reports\StyleSummaryPresenter.cs" />
+    <Compile Include="Reports\UserReportPresenter.cs" />
+    <Compile Include="SyncSettings\DataComparePresenter.cs" />
+    <Compile Include="SyncSettings\ManualSyncPresenter.cs" />
+    <Compile Include="SyncSettings\MasterDataSyncPresenter.cs" />
+    <Compile Include="SyncSettings\ServerToStoreDataSyncPresenter.cs" />
+    <Compile Include="SyncSettings\StoreToServerDataSyncPresenter.cs" />
+    <Compile Include="Transactions\Cardex\CardexLocation\CardexLocationPresenter.cs" />
+    <Compile Include="Transactions\Coupons\CouponMasterPresenter.cs" />
+    <Compile Include="Transactions\Coupons\CouponReceiptPresenter.cs" />
+    <Compile Include="Transactions\Coupons\CouponTransferPresenter.cs" />
+    <Compile Include="Transactions\CustomerSpecialPrice\CustomerSpecialPriceMasterPresenter.cs" />
+    <Compile Include="Transactions\POSOperations\PatchFormPresenter.cs" />
+    <Compile Include="Transactions\POSOperations\SalesTargetPresenter.cs" />
+    <Compile Include="Transactions\POS\DenominationPresenter.cs" />
+    <Compile Include="Transactions\POS\OnAccountPaymentPresenter.cs" />
+    <Compile Include="Transactions\POS\SalesOrderPresenter.cs" />
+    <Compile Include="Transactions\PriceChange\PriceChangePresenter.cs" />
+    <Compile Include="Transactions\Promotion\DiscountMasterPresenter.cs" />
+    <Compile Include="Transactions\POSOperations\CashInCashOutPresenter.cs" />
+    <Compile Include="Transactions\POS\CategoryTilesPresenter.cs" />
+    <Compile Include="Transactions\POS\ClosesalesPresenter.cs" />
+    <Compile Include="Transactions\POS\FindItemPresenter.cs" />
+    <Compile Include="Transactions\POS\Invoice\CouponDetailPresenter.cs" />
+    <Compile Include="Transactions\POS\Invoice\DenominationPresenter.cs" />
+    <Compile Include="Transactions\POS\Invoice\GiftvoucherDetailsPresenter.cs" />
+    <Compile Include="Transactions\POS\Invoice\HoldSalesPresenter.cs" />
+    <Compile Include="Transactions\POS\Invoice\InvoiceCardDetailsPresenter.cs" />
+    <Compile Include="Transactions\POS\Invoice\InvoiceCashDetailsPresenter.cs" />
+    <Compile Include="Transactions\POS\Invoice\InvoiceDebitCardDetailsPresenter.cs" />
+    <Compile Include="Transactions\POS\Invoice\InvoicePresenter.cs" />
+    <Compile Include="Transactions\POS\Invoice\InvoiceSearchPresenter.cs" />
+    <Compile Include="Transactions\POS\Invoice\ItemSearchPresenter.cs" />
+    <Compile Include="Transactions\POS\Invoice\PaymentHomeInvoicePresenter.cs" />
+    <Compile Include="Transactions\POS\SalesExchange\SalesExchangePresenter.cs" />
+    <Compile Include="Transactions\POS\SalesReturnPresenter.cs" />
+    <Compile Include="Transactions\POS\SalesTilesPresenter.cs" />
+    <Compile Include="Transactions\POS\StockPresenter.cs" />
+    <Compile Include="Transactions\POS\XReportViewerPresenter.cs" />
+    <Compile Include="Transactions\POS\ZRportPresenter.cs" />
+    <Compile Include="Transactions\Pricing\PricePointPresenter.cs" />
+    <Compile Include="Transactions\Promotion\PromotionMappingPresenter.cs" />
+    <Compile Include="Transactions\Promotion\PromotionPriorityPresenter.cs" />
+    <Compile Include="Transactions\Promotion\PromotionsMasterPresenter.cs" />
+    <Compile Include="Transactions\Promotion\WNPromotionPresenter.cs" />
+    <Compile Include="Transactions\Reports\ExchangeReportPresenter.cs" />
+    <Compile Include="Transactions\Reports\InoiceReportPresenter.cs" />
+    <Compile Include="Transactions\Reports\SalesReturnPresenter.cs" />
+    <Compile Include="Transactions\Reports\StockReceiptPresenter.cs" />
+    <Compile Include="Transactions\Reports\StockReturnPresenter.cs" />
+    <Compile Include="Transactions\Stocks\InventoryCountingPresenter.cs" />
+    <Compile Include="Transactions\Stocks\OpeningStockPresenter.cs" />
+    <Compile Include="Transactions\Stocks\StockAdjustmentPresenter.cs" />
+    <Compile Include="Transactions\Stocks\StockReceiptPresenter.cs" />
+    <Compile Include="Transactions\Stocks\StockRequestPresenter.cs" />
+    <Compile Include="Transactions\Stocks\StockReturnPresenter.cs" />
+    <Compile Include="Transactions\Tailoring\TailoringOrderPresenter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonRoutines\CommonRoutines.csproj">
+      <Project>{57f34cf1-4d39-4086-9159-2c0e0aed016a}</Project>
+      <Name>CommonRoutines</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizBLL\EasyBizBLL.csproj">
+      <Project>{e5e20cda-824d-4dc7-95e8-7d8ca7917ed0}</Project>
+      <Name>EasyBizBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizDBTypes\EasyBizTypes.csproj">
+      <Project>{dc2d7129-129c-4a6f-a2b2-a22a071fdb68}</Project>
+      <Name>EasyBizTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizIView\EasyBizIView.csproj">
+      <Project>{25b619e3-7107-4bf7-8371-6da0620d6413}</Project>
+      <Name>EasyBizIView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizRequest\EasyBizRequest.csproj">
+      <Project>{c396e24d-df56-4a4c-acbf-29a65c4e5b2e}</Project>
+      <Name>EasyBizRequest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizResponse\EasyBizResponse.csproj">
+      <Project>{4e26aa9e-b1e0-49ca-b5b7-6bd269f123e6}</Project>
+      <Name>EasyBizResponse</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Transactions\FamilyDiscount\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EasyBizPresenter.csproj.bak" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

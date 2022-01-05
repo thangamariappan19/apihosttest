@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25B619E3-7107-4BF7-8371-6DA0620D6413}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyBizIView</RootNamespace>
+    <AssemblyName>EasyBizIView</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DPUruNet, Version=1.0.0.1, Culture=neutral, PublicKeyToken=7f32ef930fec5e5f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DigitalPersona\U.are.U RTE\Windows\Lib\.NET\DPUruNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ILogIn.cs" />
+    <Compile Include="Dashboard\DashboardViewerView.cs" />
+    <Compile Include="Dashboard\IDashBoardReportListView.cs" />
+    <Compile Include="Dashboard\IDashBoardReportView.cs" />
+    <Compile Include="IBaseView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\IImportView.cs" />
+    <Compile Include="Masters\IAFSegamation\IAFSegamationView.cs" />
+    <Compile Include="Masters\IAFSegamation\IAFSegamationViewList.cs" />
+    <Compile Include="Masters\IAgent\IAgentCollectionView.cs" />
+    <Compile Include="Masters\IAgent\IAgentView.cs" />
+    <Compile Include="Masters\IAllocationType\IAllocationTypeMasterList.cs" />
+    <Compile Include="Masters\IAllocationType\IAllocationTypeMasterView.cs" />
+    <Compile Include="Masters\IBarcodeSettings\IBarcodeSettingsList.cs" />
+    <Compile Include="Masters\IBarcodeSettings\IBarcodeSettingsView.cs" />
+    <Compile Include="Masters\IBinLevelDetails\IBinLevelDetailsCollectionView.cs" />
+    <Compile Include="Masters\IBinLevelDetails\IBinLevelDetailsView.cs" />
+    <Compile Include="Masters\IBinMaster\IBinLevelMasterCollectionView.cs" />
+    <Compile Include="Masters\IBinMaster\IBinLevelMasterView.cs" />
+    <Compile Include="Masters\IBrandDivisionMap\IBrandDivisionMapView.cs" />
+    <Compile Include="Masters\ICityMaster\ICityMasterCollectionView.cs" />
+    <Compile Include="Masters\ICityMaster\ICityMasterView.cs" />
+    <Compile Include="Masters\ICollectionMaster\ICollectionMasterView.cs" />
+    <Compile Include="Masters\ICollectionMaster\ICollectionMasterViewList.cs" />
+    <Compile Include="Masters\IColor\IColorMasterCollectionView.cs" />
+    <Compile Include="Masters\IColor\IColorMasterView.cs" />
+    <Compile Include="Masters\IDesignation\IDesignationMasterList.cs" />
+    <Compile Include="Masters\IDesignation\IDesignationMasterView.cs" />
+    <Compile Include="Masters\IDesignMaster\IDesignMasterViewList.cs" />
+    <Compile Include="Masters\IDesignMaster\IDesignView.cs" />
+    <Compile Include="Masters\IDivision\IDivisionCollectionView.cs" />
+    <Compile Include="Masters\IDivision\IDivisionView.cs" />
+    <Compile Include="Masters\IDocumentNumberingMaster\IDocumentNumberingList.cs" />
+    <Compile Include="Masters\IDocumentNumberingMaster\IDocumentNumberingView.cs" />
+    <Compile Include="Masters\IDocumentType\IDocumentList.cs" />
+    <Compile Include="Masters\IDocumentType\IDocumentTypeView.cs" />
+    <Compile Include="Masters\IDropMaster\IDropMasterView.cs" />
+    <Compile Include="Masters\IDropMaster\IDropMasterViewList.cs" />
+    <Compile Include="Masters\IEmployeeMaster\IEmployeeList.cs" />
+    <Compile Include="Masters\IEmployeeMaster\IEmployeeView.cs" />
+    <Compile Include="Masters\IEmployeeMaster\IEmployeeFingerPrintView.cs" />
+    <Compile Include="Masters\IExchangeRate\IExchangeRateListView.cs" />
+    <Compile Include="Masters\IExchangeRate\IExchangeRateView.cs" />
+    <Compile Include="Masters\IExpenseMaster\IExpenseMasterView.cs" />
+    <Compile Include="Masters\IExpenseMaster\IExpenseMasterViewList.cs" />
+    <Compile Include="Masters\IFingerPrint\IFingerPrintView.cs" />
+    <Compile Include="Masters\IFranchise\IFranchiseCollection.cs" />
+    <Compile Include="Masters\IFranchise\IFranchiseView.cs" />
+    <Compile Include="Masters\IFreight\IFreightMasterList.cs" />
+    <Compile Include="Masters\IFreight\IFreightMasterView.cs" />
+    <Compile Include="Masters\ILabelPrintingMaster\IlabelprinitngView.cs" />
+    <Compile Include="Masters\ILabelPrintingMaster\ISalesLabelPrintingView.cs" />
+    <Compile Include="Masters\ILogIn\IFingerVerify.cs" />
+    <Compile Include="Masters\ILogIn\ILogInView.cs" />
+    <Compile Include="Masters\IManagerOverride\IManagerOverrideList.cs" />
+    <Compile Include="Masters\IManagerOverride\IManagerOverrideView.cs" />
+    <Compile Include="Masters\IOrderTypeMaster\IOrderTypeMasterList.cs" />
+    <Compile Include="Masters\IOrderTypeMaster\IOrderTypeMasterView.cs" />
+    <Compile Include="Masters\IPaymentTypeMaster\IPaymentTypeMasterList.cs" />
+    <Compile Include="Masters\IPaymentTypeMaster\IPaymentTypeMasterView.cs" />
+    <Compile Include="Masters\IPosMaster\IPosMasterList.cs" />
+    <Compile Include="Masters\IPosMaster\IPosMasterView.cs" />
+    <Compile Include="Masters\ICustomerMaster\ICustomerMasterCollectionViewList.cs" />
+    <Compile Include="Masters\ICustomerMaster\ICustomerMasterView.cs" />
+    <Compile Include="Masters\IBrand\IBrandMasterListView.cs" />
+    <Compile Include="Masters\IBrand\IBrandMasterView.cs" />
+    <Compile Include="Masters\IPrevileges\IPrevilegesView.cs" />
+    <Compile Include="Masters\IPriceListMaster\IPriceListCollectionView.cs" />
+    <Compile Include="Masters\IPriceListMaster\IPriceListView.cs" />
+    <Compile Include="Masters\IPriceTypeMaster\IPriceTypeView.cs" />
+    <Compile Include="Masters\IPriceTypeMaster\IPriceTypeViewList.cs" />
+    <Compile Include="Masters\IProductLineMaster\IProductLineMasterList.cs" />
+    <Compile Include="Masters\IProductLineMaster\IProductLineMasterView.cs" />
+    <Compile Include="Masters\IProductSubGroup\IProductSubGroupCollectionView.cs" />
+    <Compile Include="Masters\IProductSubGroup\IProductSubGroupView.cs" />
+    <Compile Include="Masters\IReason\IReasonMasterList.cs" />
+    <Compile Include="Masters\IReason\IReasonMasterView.cs" />
+    <Compile Include="Masters\IRequestType\IRequestTypeMasterList.cs" />
+    <Compile Include="Masters\IRequestType\IRequestTypeMasterView.cs" />
+    <Compile Include="Masters\IRetailSettings\IRetailCollectionView.cs" />
+    <Compile Include="Masters\IRetailSettings\IRetailView.cs" />
+    <Compile Include="Masters\IScale\IScaleCollectionView.cs" />
+    <Compile Include="Masters\IScale\IScaleView.cs" />
+    <Compile Include="Masters\ISeason\ISeasonList.cs" />
+    <Compile Include="Masters\ISeason\ISeasonview.cs" />
+    <Compile Include="Masters\ISegmentMaster\ISegmentMasterView.cs" />
+    <Compile Include="Masters\ISegmentMaster\ISegmentMasterViewList.cs" />
+    <Compile Include="Masters\IShift\IShiftMasterCollectionView.cs" />
+    <Compile Include="Masters\IShift\IShiftMasterView.cs" />
+    <Compile Include="Masters\ISKUMaster\ISKUMasterView.cs" />
+    <Compile Include="Masters\ISKUMaster\ISKUMasterViewList.cs" />
+    <Compile Include="Masters\IStoreGroup\IStoreGroupMasterList.cs" />
+    <Compile Include="Masters\IStoreGroup\IStoreGroupMasterView.cs" />
+    <Compile Include="Masters\IStoreMaster\IStoreMasterList.cs" />
+    <Compile Include="Masters\IStoreMaster\IStoreMasterView.cs" />
+    <Compile Include="Masters\IStyle\IStyleCollectionView.cs" />
+    <Compile Include="Masters\IStyle\IStyleView.cs" />
+    <Compile Include="Masters\IStyleStatusMaster\IStyleStatusView.cs" />
+    <Compile Include="Masters\IStyleStatusMaster\IStyleStatusViewList.cs" />
+    <Compile Include="Masters\ISubCollectionMaster\ISubCollectionView.cs" />
+    <Compile Include="Masters\ISubCollectionMaster\ISubCollectionViewList.cs" />
+    <Compile Include="Masters\ISubSeason\ISubSeasonMasterCollectionView.cs" />
+    <Compile Include="Masters\ISubSeason\ISubSeasonMasterView.cs" />
+    <Compile Include="Masters\ITailoringMaster\ITailoringCollectionView.cs" />
+    <Compile Include="Masters\ITailoringMaster\ITailoringMasterView.cs" />
+    <Compile Include="Masters\ITax\ITaxCollectionView.cs" />
+    <Compile Include="Masters\ITax\ITaxView.cs" />
+    <Compile Include="Masters\ITill\ITillSettingsList.cs" />
+    <Compile Include="Masters\ITill\ITillSettingsView.cs" />
+    <Compile Include="Masters\IUsers\IUserPasswordReset.cs" />
+    <Compile Include="Masters\IUsers\IUsersMasterCollectionView.cs" />
+    <Compile Include="Masters\IUsers\IUsersMasterView.cs" />
+    <Compile Include="Masters\IWarehouseMaster\IWarehouseMasterList.cs" />
+    <Compile Include="Masters\IWarehouseMaster\IWarehouseMasterView.cs" />
+    <Compile Include="Masters\IWarehouseTypeMaster\IWarehouseTypeMasterList.cs" />
+    <Compile Include="Masters\IWarehouseTypeMaster\IWarehouseTypeMasterView.cs" />
+    <Compile Include="Masters\ICountry\ICountryList.cs" />
+    <Compile Include="Masters\ICountry\ICountryView.cs" />
+    <Compile Include="Masters\ICurrency\ICurrencyList.cs" />
+    <Compile Include="Masters\ICurrency\ICurrencyView.cs" />
+    <Compile Include="Masters\IProductGroup\IProductGroupList.cs" />
+    <Compile Include="Masters\IProductGroup\IProductGroupView.cs" />
+    <Compile Include="Masters\IRole\IRoleList.cs" />
+    <Compile Include="Masters\IRole\IRoleView.cs" />
+    <Compile Include="Masters\ICompanySettingMaster\ICompanySettingCollectionList.cs" />
+    <Compile Include="Masters\ICompanySettingMaster\ICompanySettingMasterView.cs" />
+    <Compile Include="Masters\ICustomerGroupMaster\ICustomerGroupMasterView.cs" />
+    <Compile Include="Masters\ICustomerGroupMaster\ICustomerGroupMasterList.cs" />
+    <Compile Include="Masters\ILanguage\ILanguageList.cs" />
+    <Compile Include="Masters\ILanguage\ILanguageView.cs" />
+    <Compile Include="Masters\IState\IStateMasterCollectionView.cs" />
+    <Compile Include="Masters\IState\IStateMasterView.cs" />
+    <Compile Include="Masters\ISubBrand\ISubBrandMasterCollectionView.cs" />
+    <Compile Include="Masters\ISubBrand\ISubBrandMasterView.cs" />
+    <Compile Include="Masters\IVendorGroup\IVendorGroupCollectionView.cs" />
+    <Compile Include="Masters\IVendorGroup\IVendorGroupView.cs" />
+    <Compile Include="Masters\IVendor\IVendorCollectionView.cs" />
+    <Compile Include="Masters\IVendor\IVendorView.cs" />
+    <Compile Include="Masters\IYear\IYearCollcetionView.cs" />
+    <Compile Include="Masters\IYear\IYearView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\IDayWiseActivitiesReportView.cs" />
+    <Compile Include="Reports\IDaywiseReportView.cs" />
+    <Compile Include="Reports\IDetailedShowroomSales.cs" />
+    <Compile Include="Reports\ICashierWiseReportView.cs" />
+    <Compile Include="Reports\ICurrentStockReportView.cs" />
+    <Compile Include="Reports\IDailySalesReportView.cs" />
+    <Compile Include="Reports\IDetailedStockReceiptReportView.cs" />
+    <Compile Include="Reports\IDetailedStockReturnReportView.cs" />
+    <Compile Include="Reports\IDetailSalesReportView.cs" />
+    <Compile Include="Reports\IDetailSalesReturnReportView.cs" />
+    <Compile Include="Reports\ISalesmanwiseReportView.cs" />
+    <Compile Include="Reports\IStockMovementReportView.cs" />
+    <Compile Include="Reports\IUserReportRegister.cs" />
+    <Compile Include="Reports\IXReportView.cs" />
+    <Compile Include="Reports\IZReport.cs" />
+    <Compile Include="Reports\StockReceiptReportView.cs" />
+    <Compile Include="SyncSettings\IDataCompareView.cs" />
+    <Compile Include="SyncSettings\IManualMasterSyncView.cs" />
+    <Compile Include="SyncSettings\IManualSyncView.cs" />
+    <Compile Include="SyncSettings\IMasterDataSyncView.cs" />
+    <Compile Include="SyncSettings\IServerToStoreDataSyncView.cs" />
+    <Compile Include="SyncSettings\IStoreToServerDataSyncView.cs" />
+    <Compile Include="Transactions\ICardex\IcardexLocation\IcardexLocationView.cs" />
+    <Compile Include="Transactions\ICoupons\ICouponMasterList.cs" />
+    <Compile Include="Transactions\ICoupons\ICouponMasterView.cs" />
+    <Compile Include="Transactions\ICoupons\IcouponReceiptHeader.cs" />
+    <Compile Include="Transactions\ICoupons\IcouponReceiptList.cs" />
+    <Compile Include="Transactions\ICoupons\ICouponTransferList.cs" />
+    <Compile Include="Transactions\ICoupons\ICouponTransferView.cs" />
+    <Compile Include="Transactions\ICustomerSpecialPrice\ICustomerSpecialPriceMasterList.cs" />
+    <Compile Include="Transactions\ICustomerSpecialPrice\ICustomerSpecialPriceMasterView.cs" />
+    <Compile Include="Transactions\IInventoryCounting\IInventoryCountingCollectionView.cs" />
+    <Compile Include="Transactions\IInventoryCounting\IInventoryCountingEntry.cs" />
+    <Compile Include="Transactions\IInventoryCounting\IInventoryCountingView.cs" />
+    <Compile Include="Transactions\IItemSummary\IStyleSummaryView.cs" />
+    <Compile Include="Transactions\INonTradingItem\INonTradingItemView.cs" />
+    <Compile Include="Transactions\INonTradingItem\INonTradingStockCollectionView.cs" />
+    <Compile Include="Transactions\IOnAccountPayment\IOnAccountPayment.cs" />
+    <Compile Include="Transactions\IOpeningStock\IOpeningStockCollectionView.cs" />
+    <Compile Include="Transactions\IOpeningStock\IOpeningStockView.cs" />
+    <Compile Include="Transactions\IPOSOperations\ICashInCashOut\ICashInCashOutCollectionView.cs" />
+    <Compile Include="Transactions\IPOSOperations\ICashInCashOut\ICashInCashOutView.cs" />
+    <Compile Include="Transactions\IPOSOperations\IPatchForm\IPatchFormView.cs" />
+    <Compile Include="Transactions\IPOSOperations\ISalesTarget\IsalesTargetView.cs" />
+    <Compile Include="Transactions\IPOSOperations\ISalesTarget\ItargetCollection.cs" />
+    <Compile Include="Transactions\IPOS\IAPI_SalesOrder\IAPI_SalesOrderCollectionView.cs" />
+    <Compile Include="Transactions\IPOS\IAPI_SalesOrder\IAPI_SalesOrderView.cs" />
+    <Compile Include="Transactions\IPOS\ICloseSales.cs" />
+    <Compile Include="Transactions\IPOS\IDenomination.cs" />
+    <Compile Include="Transactions\IPOS\IDenominationDetails.cs" />
+    <Compile Include="Transactions\IPOS\IFindItemView.cs" />
+    <Compile Include="Transactions\IPOS\IHoldSalesView.cs" />
+    <Compile Include="Transactions\IPOS\IInvoiceSearchView.cs" />
+    <Compile Include="Transactions\IPOS\IInvoice\IDenominationView.cs" />
+    <Compile Include="Transactions\IPOS\IInvoice\IInvoiceCardDetails.cs" />
+    <Compile Include="Transactions\IPOS\IInvoice\IInvoiceList.cs" />
+    <Compile Include="Transactions\IPOS\IInvoice\IInvoiceView.cs" />
+    <Compile Include="Transactions\IPOS\IItemSearchView.cs" />
+    <Compile Include="Transactions\IPOS\IPaymentView\CouponDetailView.cs" />
+    <Compile Include="Transactions\IPOS\IPaymentView\GiftvoucherDetailsview.cs" />
+    <Compile Include="Transactions\IPOS\IPaymentView\IInvoiceCashDetailsView.cs" />
+    <Compile Include="Transactions\IPOS\IPaymentView\IPaymentDetailsHome.cs" />
+    <Compile Include="Transactions\IPOS\ISalesExchange\ISalesExchangeCollectionView.cs" />
+    <Compile Include="Transactions\IPOS\ISalesExchange\ISalesExchangeView.cs" />
+    <Compile Include="Transactions\IPOS\ISalesOrder\ISalesOrderCollectionView.cs" />
+    <Compile Include="Transactions\IPOS\ISalesOrder\ISalesOrderView.cs" />
+    <Compile Include="Transactions\IPOS\ISalesReturns\ISalesReturnCollectionView.cs" />
+    <Compile Include="Transactions\IPOS\ISalesReturns\ISalesReturnView.cs" />
+    <Compile Include="Transactions\IPOS\ISalesTiles.cs" />
+    <Compile Include="Transactions\IPOS\IShiftTiles.cs" />
+    <Compile Include="Transactions\IPOS\IStyleStockView.cs" />
+    <Compile Include="Transactions\IPriceChange\IPriceChangeCollectionView.cs" />
+    <Compile Include="Transactions\IPriceChange\IPriceChangeView.cs" />
+    <Compile Include="Transactions\IPriceChange\IPriceLogView.cs" />
+    <Compile Include="Transactions\IPricePoint\IPricePointListView.cs" />
+    <Compile Include="Transactions\IPricePoint\IPricePointView.cs" />
+    <Compile Include="Transactions\IPromotionPriority\IPromotionPriorityCollectionView.cs" />
+    <Compile Include="Transactions\IPromotionPriority\IPromotionPriorityView.cs" />
+    <Compile Include="Transactions\IPromotion\CommonCustomerList.cs" />
+    <Compile Include="Transactions\IPromotion\IDiscountMaster\IDiscountMasterView.cs" />
+    <Compile Include="Transactions\IPromotion\IDiscountMaster\IDiscountMasterCollectionViewList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transactions\IPromotion\IPromotionMappingView.cs" />
+    <Compile Include="Transactions\IPromotion\IPromotionsCollectionView.cs" />
+    <Compile Include="Transactions\IPromotion\IPromotionsView.cs" />
+    <Compile Include="Transactions\IPromotion\IWNPromotionCollectionView.cs" />
+    <Compile Include="Transactions\IPromotion\IWNPromotionView.cs" />
+    <Compile Include="Transactions\IReports\IDayWiseTransaction\IDayWiseTransactionReportView.cs" />
+    <Compile Include="Transactions\IReports\IDayWiseTransaction\IInvoiceTransactionReport.cs" />
+    <Compile Include="Transactions\IReports\IDayWiseTransaction\ISalesExchangeTransactionReport.cs" />
+    <Compile Include="Transactions\IReports\IDayWiseTransaction\ISalesReturnTransactionReport.cs" />
+    <Compile Include="Transactions\IReports\IDayWiseTransaction\IStockAdjustmentTransactionReport.cs" />
+    <Compile Include="Transactions\IReports\IDayWiseTransaction\IStockReceiptTransactionReport.cs" />
+    <Compile Include="Transactions\IReports\IDayWiseTransaction\IStockReturnTransactionReport.cs" />
+    <Compile Include="Transactions\IReports\IExchangeReport.cs" />
+    <Compile Include="Transactions\IReports\IInvoiceDetailsReport.cs" />
+    <Compile Include="Transactions\IReports\IInvoiceReport.cs" />
+    <Compile Include="Transactions\IReports\ISalesReturn.cs" />
+    <Compile Include="Transactions\IReports\IStockReceipt.cs" />
+    <Compile Include="Transactions\IReports\IStockReturn.cs" />
+    <Compile Include="Transactions\IStockAdjustment\IStockAdjustmentCollectionView.cs" />
+    <Compile Include="Transactions\IStockAdjustment\IStockAdjustmentView.cs" />
+    <Compile Include="Transactions\IStockReceipt\IStockReceiptCollectionView.cs" />
+    <Compile Include="Transactions\IStockReceipt\IStockreceiptFromWms.cs" />
+    <Compile Include="Transactions\IStockReceipt\IStockReceiptView.cs" />
+    <Compile Include="Transactions\IStockRequest\IStockRequestCollectionView.cs" />
+    <Compile Include="Transactions\IStockRequest\IStockRequestView.cs" />
+    <Compile Include="Transactions\IStockReturn\IStockReturnCollectionView.cs" />
+    <Compile Include="Transactions\IStockReturn\IStockReturnView.cs" />
+    <Compile Include="Transactions\ITailoring\IDeliverToCustomer.cs" />
+    <Compile Include="Transactions\ITailoring\IDespatchToTailoringUnit.cs" />
+    <Compile Include="Transactions\ITailoring\IReceiveFromTailorView.cs" />
+    <Compile Include="Transactions\ITailoring\ITailoringOrderCollectionView.cs" />
+    <Compile Include="Transactions\ITailoring\ITailoringOrderView.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\EasyBizDBTypes\EasyBizTypes.csproj">
+      <Project>{dc2d7129-129c-4a6f-a2b2-a22a071fdb68}</Project>
+      <Name>EasyBizTypes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

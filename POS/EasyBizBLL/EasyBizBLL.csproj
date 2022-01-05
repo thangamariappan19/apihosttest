@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5E20CDA-824D-4DC7-95E8-7D8CA7917ED0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyBizBLL</RootNamespace>
+    <AssemblyName>EasyBizBLL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\THANGA~1\AppData\Local\Temp\vs782C.tmp\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <IntermediateOutputPath>C:\Users\THANGA~1\AppData\Local\Temp\vs782C.tmp\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BackgroundServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\DayClosingBLL.cs" />
+    <Compile Include="Common\DayShiftLOGBLL.cs" />
+    <Compile Include="Common\DocumnetNoGenerator.cs" />
+    <Compile Include="Common\ErrorHandler.cs" />
+    <Compile Include="Common\SchemaInfoBLL.cs" />
+    <Compile Include="Common\SyncLinkedClass.cs" />
+    <Compile Include="Common\Tables.cs" />
+    <Compile Include="Dashboard\RegisterDashBoardBLL.cs" />
+    <Compile Include="FCPasses\PassesTransactionBLL.cs" />
+    <Compile Include="FCPasses\PassMasterBLL.cs" />
+    <Compile Include="Import\ImportStylePricingBLL.cs" />
+    <Compile Include="Masters\AgentBLL.cs" />
+    <Compile Include="Masters\AllocationTypeMasterBLL.cs" />
+    <Compile Include="Masters\ArmadaCollectionBLL.cs" />
+    <Compile Include="Masters\BarcodeSettingsBLL.cs" />
+    <Compile Include="Masters\BinLevelDetailsBLL.cs" />
+    <Compile Include="Masters\BinLevelMasterBLL.cs" />
+    <Compile Include="Masters\BinTransferMasterBLL.cs" />
+    <Compile Include="Masters\BrandDivisionMapBLL.cs" />
+    <Compile Include="Masters\CityMasterBLL.cs" />
+    <Compile Include="Masters\CollectionMasterBLL.cs" />
+    <Compile Include="Masters\ComboOfferMasterBLL.cs" />
+    <Compile Include="Masters\CountTypeMasterBLL.cs" />
+    <Compile Include="Masters\DesignationMasterBLL.cs" />
+    <Compile Include="Masters\DesignMasterBLL.cs" />
+    <Compile Include="Masters\DropMasterBLL.cs" />
+    <Compile Include="Masters\AFSegamationMasterBLL.cs" />
+    <Compile Include="Masters\ColorBLL.cs" />
+    <Compile Include="Masters\DivisionBLL.cs" />
+    <Compile Include="Masters\DocumentNumberingBLL.cs" />
+    <Compile Include="Masters\DocumentTypeBLL.cs" />
+    <Compile Include="Masters\EmployeeFingerPrintBLL.cs" />
+    <Compile Include="Masters\EmployeeMasterBLL.cs" />
+    <Compile Include="Masters\ExchangeRatesBLL.cs" />
+    <Compile Include="Masters\ExpenseMasterBLL.cs" />
+    <Compile Include="Masters\FranchiseBLL.cs" />
+    <Compile Include="Masters\FreightMasterBLL.cs" />
+    <Compile Include="Masters\ItemGroupMasterBLL.cs" />
+    <Compile Include="Masters\ItemTypeMasterBLL.cs" />
+    <Compile Include="Masters\LabelPrintingBLL.cs" />
+    <Compile Include="Masters\ManagerOverrideBLL.cs" />
+    <Compile Include="Masters\OrderTypeMasterBLL.cs" />
+    <Compile Include="Masters\PaymentModeMasterBLL.cs" />
+    <Compile Include="Masters\PosMasterBLL.cs" />
+    <Compile Include="Masters\CustomerMasterBLL.cs" />
+    <Compile Include="Masters\LanguageBLL.cs" />
+    <Compile Include="Masters\PaymentTypeMasterBLL.cs" />
+    <Compile Include="Masters\PrevilegesBLL.cs" />
+    <Compile Include="Masters\PriceListBLL.cs" />
+    <Compile Include="Masters\PriceTypeBLL.cs" />
+    <Compile Include="Masters\ProductGroupBLL.cs" />
+    <Compile Include="Masters\BrandBLL.cs" />
+    <Compile Include="Masters\ProductLineMasterBLL.cs" />
+    <Compile Include="Masters\CountryBLL.cs" />
+    <Compile Include="Masters\CurrencyBLL.cs" />
+    <Compile Include="Masters\ProductSubGroupBLL.cs" />
+    <Compile Include="Masters\PromotionsMasterBLL.cs" />
+    <Compile Include="Masters\ReasonMasterBLL.cs" />
+    <Compile Include="Masters\RequestTypeMasterBLL.cs" />
+    <Compile Include="Masters\RetailSettingsBLL.cs" />
+    <Compile Include="Masters\RoleBLL.cs" />
+    <Compile Include="Masters\CompanySettingBLL.cs" />
+    <Compile Include="Masters\CustomerGroupBLL.cs" />
+    <Compile Include="Masters\ScaleBLL.cs" />
+    <Compile Include="Masters\SearchEngineBLL.cs" />
+    <Compile Include="Masters\SeasonBLL.cs" />
+    <Compile Include="Masters\SegmentMasterBLL.cs" />
+    <Compile Include="Masters\ShiftBLL.cs" />
+    <Compile Include="Masters\SKUMasterBLL.cs" />
+    <Compile Include="Masters\StateMasterBLL.cs" />
+    <Compile Include="Masters\StoreGroupBLL.cs" />
+    <Compile Include="Masters\StoreMasterBLL.cs" />
+    <Compile Include="Masters\StyleMasterBLL.cs" />
+    <Compile Include="Masters\StyleStatusBLL.cs" />
+    <Compile Include="Masters\SubBrandBLL.cs" />
+    <Compile Include="Masters\SubCollectionBLL.cs" />
+    <Compile Include="Masters\SubSeasonBLL.cs" />
+    <Compile Include="Masters\TailoringMasterBLL.cs" />
+    <Compile Include="Masters\TaxBLL.cs" />
+    <Compile Include="Masters\TillSettingsBLL.cs" />
+    <Compile Include="Masters\UsersBLL.cs" />
+    <Compile Include="Masters\WarehouseMasterBLL.cs" />
+    <Compile Include="Masters\WarehouseTypeMasterBLL.cs" />
+    <Compile Include="Masters\VendorGroupMasterBLL.cs" />
+    <Compile Include="Masters\VendorMasterBLL.cs" />
+    <Compile Include="Masters\YearBLL.cs" />
+    <Compile Include="PatchFormBLL\PatchFormBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CurrentStockReportBLL.cs" />
+    <Compile Include="Reports\DailySalesReportBLL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\InvoiceTransactionReportBLL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\SalesExchangeTransactionReportBLL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\SalesReturnTransactionReportBLL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\StockAdjustmentTransactionReportBLL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\StockReceiptTransactionReportBLL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\StockReturnTransactionReportBLL.cs" />
+    <Compile Include="Reports\ReportsBLL.cs" />
+    <Compile Include="Reports\StockMovementReportBLL.cs" />
+    <Compile Include="Reports\UserReportBLL.cs" />
+    <Compile Include="SalesTargetBLL\SalesTargetBLL.cs" />
+    <Compile Include="SyncSettings\ManualMasterSyncBLL.cs" />
+    <Compile Include="SyncSettings\MasterDataSyncBLL.cs" />
+    <Compile Include="SyncSettings\SyncSettingsBLL.cs" />
+    <Compile Include="Transactions\Cardex\CardexLocation\CardexLocationBLL.cs" />
+    <Compile Include="Transactions\Coupens\CouponMasterBLL.cs" />
+    <Compile Include="Transactions\CouponReceipt\CouponreceiptBLL.cs" />
+    <Compile Include="Transactions\CouponTransfer\CouponTransferBLL.cs" />
+    <Compile Include="Transactions\CustomerSpecialPrice\CustomerSpecialPriceMasterBLL.cs" />
+    <Compile Include="Transactions\POSOperations\CashInCashOutBLL.cs" />
+    <Compile Include="Transactions\POS\API_SalesOrderBLL.cs" />
+    <Compile Include="Transactions\POS\CouponDetailBLL.cs" />
+    <Compile Include="Transactions\POS\DenominationBLL.cs" />
+    <Compile Include="Transactions\POS\GiftvoucherDetailBLL.cs" />
+    <Compile Include="Transactions\POS\InvoiceBLL.cs" />
+    <Compile Include="Transactions\POS\InvoiceCardDetailsBLL.cs" />
+    <Compile Include="Transactions\POS\InvoiceCashDetailsBLL.cs" />
+    <Compile Include="Transactions\POS\OnAccountPaymentBLL.cs" />
+    <Compile Include="Transactions\POS\PaymentProcessorBLL.cs" />
+    <Compile Include="Transactions\POS\PaymentTypeBLL.cs" />
+    <Compile Include="Transactions\POS\SalesExchangeBLL.cs" />
+    <Compile Include="Transactions\POS\SalesOrderBLL.cs" />
+    <Compile Include="Transactions\POS\SalesReturnBLL.cs" />
+    <Compile Include="Transactions\POS\TransactionStatusBLL.cs" />
+    <Compile Include="Transactions\POS\WebSalesOrderBLL.cs" />
+    <Compile Include="Transactions\PriceChange\PriceChangeBLL.cs" />
+    <Compile Include="Transactions\Pricing\PricePointBLL.cs" />
+    <Compile Include="Transactions\Promotions\DiscountMasterBLL.cs" />
+    <Compile Include="Transactions\Promotions\PromotionMappingBLL.cs" />
+    <Compile Include="Transactions\Promotions\PromotionPriorityBLL.cs" />
+    <Compile Include="Transactions\Promotions\WNPromotionBLL.cs" />
+    <Compile Include="Transactions\Reports\InvoiceReportBLL.cs" />
+    <Compile Include="Transactions\Stocks\InventoryCountingBLL.cs" />
+    <Compile Include="Transactions\Stocks\NonTradingItemStockBLL.cs" />
+    <Compile Include="Transactions\Stocks\OpeningStockBLL.cs" />
+    <Compile Include="Transactions\Stocks\StockAdjustmentBLL.cs" />
+    <Compile Include="Transactions\Stocks\StockReceiptBLL.cs" />
+    <Compile Include="Transactions\Stocks\StockRequestBLL.cs" />
+    <Compile Include="Transactions\Stocks\StockReturnBLL.cs" />
+    <Compile Include="Transactions\Stocks\StockStagingBLL.cs" />
+    <Compile Include="Transactions\Tailoring\TailoringOrderBLL.cs" />
+    <Compile Include="Transactions\TransactionLogs\TransactionLogBLL.cs" />
+    <Compile Include="WorkerResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkerResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WorkerResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WorkerResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonRoutines\CommonRoutines.csproj">
+      <Project>{57f34cf1-4d39-4086-9159-2c0e0aed016a}</Project>
+      <Name>CommonRoutines</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizAbsDAL\EasyBizAbsDAL.csproj">
+      <Project>{fd762ac9-74a5-421c-9331-569494888356}</Project>
+      <Name>EasyBizAbsDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizDBTypes\EasyBizTypes.csproj">
+      <Project>{dc2d7129-129c-4a6f-a2b2-a22a071fdb68}</Project>
+      <Name>EasyBizTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizErrorLogger\EasyBizErrorLogger.csproj">
+      <Project>{968b47d0-adfb-451c-8f6b-f56d7c1ed7ac}</Project>
+      <Name>EasyBizErrorLogger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizFactory\EasyBizFactory.csproj">
+      <Project>{ed9f0011-b179-44f7-9200-d26b58fe2038}</Project>
+      <Name>EasyBizFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizIView\EasyBizIView.csproj">
+      <Project>{25b619e3-7107-4bf7-8371-6da0620d6413}</Project>
+      <Name>EasyBizIView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizRequest\EasyBizRequest.csproj">
+      <Project>{c396e24d-df56-4a4c-acbf-29a65c4e5b2e}</Project>
+      <Name>EasyBizRequest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizResponse\EasyBizResponse.csproj">
+      <Project>{4e26aa9e-b1e0-49ca-b5b7-6bd269f123e6}</Project>
+      <Name>EasyBizResponse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MsSqlDAL\MsSqlDAL.csproj">
+      <Project>{9c94edab-b184-40e0-b6fc-9dfa70645241}</Project>
+      <Name>MsSqlDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceStrings\ResourceStrings.csproj">
+      <Project>{a00471d0-0072-48f0-82c4-2d98872a0dfc}</Project>
+      <Name>ResourceStrings</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

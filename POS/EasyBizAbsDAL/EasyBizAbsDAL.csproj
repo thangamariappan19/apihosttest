@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD762AC9-74A5-421C-9331-569494888356}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyBizAbsDAL</RootNamespace>
+    <AssemblyName>EasyBizAbsDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\THANGA~1\AppData\Local\Temp\vs77EC.tmp\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\THANGA~1\AppData\Local\Temp\vs77EC.tmp\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BaseDAL.cs" />
+    <Compile Include="Common\BaseDALRepository.cs" />
+    <Compile Include="Common\BaseDayClosingDAL.cs" />
+    <Compile Include="Common\BaseSchemaInfoDAL.cs" />
+    <Compile Include="Common\BaseShiftLOGDAL.cs" />
+    <Compile Include="DashBoard\BaseRegisterDashBoardDAL.cs" />
+    <Compile Include="FCPasses\BasePassesTransactionDAL.cs" />
+    <Compile Include="FCPasses\BassPassMasterDAL.cs" />
+    <Compile Include="Import\BaseImportStylePricingDAL.cs" />
+    <Compile Include="Masters\BaseAgentMasterDAL.cs" />
+    <Compile Include="Masters\BaseAllocationTypeMasterDAL.cs" />
+    <Compile Include="Masters\BaseArmadaCollectionMasterDAL.cs" />
+    <Compile Include="Masters\BaseBarcodeSettingsDAL.cs" />
+    <Compile Include="Masters\BaseBinLevelDetailsDAL.cs" />
+    <Compile Include="Masters\BaseBinLevelMasterDAL.cs" />
+    <Compile Include="Masters\BaseBinTransferMasterDAL.cs" />
+    <Compile Include="Masters\BaseBrandDivisionMapDAL.cs" />
+    <Compile Include="Masters\BaseCityMasterDAL.cs" />
+    <Compile Include="Masters\BaseCollectionMasterDAL.cs" />
+    <Compile Include="Masters\BaseComboOfferMasterDAL.cs" />
+    <Compile Include="Masters\BaseCountTypeMasterDAL.cs" />
+    <Compile Include="Masters\BaseDesignationMasterDAL.cs" />
+    <Compile Include="Masters\BaseDesignMasterDAL.cs" />
+    <Compile Include="Masters\BaseDropMasterDAL.cs" />
+    <Compile Include="Masters\BaseAFSegamationMasterDAL.cs" />
+    <Compile Include="Masters\BaseColorMasterDAL.cs" />
+    <Compile Include="Masters\BaseDivisionMasterDAL.cs" />
+    <Compile Include="Masters\BaseDocumentNumberingMasterDAL.cs" />
+    <Compile Include="Masters\BaseDocumentTypeDAL.cs" />
+    <Compile Include="Masters\BaseEmployeeFingerPrintMasterDAL.cs" />
+    <Compile Include="Masters\BaseEmployeeMasterDAL.cs" />
+    <Compile Include="Masters\BaseExchangeRatesDAL.cs" />
+    <Compile Include="Masters\BaseExpenseMasterDAL.cs" />
+    <Compile Include="Masters\BaseFranchiseMasterDAL.cs" />
+    <Compile Include="Masters\BaseFreightMasterDAL.cs" />
+    <Compile Include="Masters\BaseItemGroupMasterDAL.cs" />
+    <Compile Include="Masters\BaseItemTypeMasterDAL.cs" />
+    <Compile Include="Masters\BaseLabelPrintingDAL.cs" />
+    <Compile Include="Masters\BaseManagerOverrideDAL.cs" />
+    <Compile Include="Masters\BaseOrderTypeMasterDAL.cs" />
+    <Compile Include="Masters\BasePaymentModeMasterDAL.cs" />
+    <Compile Include="Masters\BasePosMasterDAL.cs" />
+    <Compile Include="Masters\BaseCustomerMasterDAL.cs" />
+    <Compile Include="Masters\BaseLanguageDAL.cs" />
+    <Compile Include="Masters\BasePaymentTypeSettingDAL.cs" />
+    <Compile Include="Masters\BaseBrandMasterDAL.cs" />
+    <Compile Include="Masters\BasePrevilegesDAL.cs" />
+    <Compile Include="Masters\BasePriceListDAL.cs" />
+    <Compile Include="Masters\BasePriceTypeDAL.cs" />
+    <Compile Include="Masters\BaseProductLineMasterDAL.cs" />
+    <Compile Include="Masters\BaseCountryDAL.cs" />
+    <Compile Include="Masters\BaseCurrencyDAL.cs" />
+    <Compile Include="Masters\BaseProductGroupDAL.cs" />
+    <Compile Include="Masters\BaseProductSubGroupMasterDAL.cs" />
+    <Compile Include="Masters\BasePromotionsMasterDAL.cs" />
+    <Compile Include="Masters\BaseReasonMasterDAL.cs" />
+    <Compile Include="Masters\BaseRequestTypeMasterDAL.cs" />
+    <Compile Include="Masters\BaseRetailSettingsDAL.cs" />
+    <Compile Include="Masters\BaseRoleDAL.cs" />
+    <Compile Include="Masters\BaseCompanySettingDAL.cs" />
+    <Compile Include="Masters\BaseScaleMasterDAL.cs" />
+    <Compile Include="Masters\BaseSearchEngineDAL.cs" />
+    <Compile Include="Masters\BaseSeasonDAL.cs" />
+    <Compile Include="Masters\BaseSegmentationMasterDAL.cs" />
+    <Compile Include="Masters\BaseShiftMasterDAL.cs" />
+    <Compile Include="Masters\BaseSKUMasterDAL.cs" />
+    <Compile Include="Masters\BaseStateMasterDAL.cs" />
+    <Compile Include="Masters\BaseStoreGroupMasterDAL.cs" />
+    <Compile Include="Masters\BaseStoreMasterDAL.cs" />
+    <Compile Include="Masters\BaseStyleMasterDAL.cs" />
+    <Compile Include="Masters\BaseStyleStatusMasterDAL.cs" />
+    <Compile Include="Masters\BaseSubBrandMasterDAL.cs" />
+    <Compile Include="Masters\BaseSubCollectionDAL.cs" />
+    <Compile Include="Masters\BaseSubSeasonMasterDAL.cs" />
+    <Compile Include="Masters\BaseTailoringMasterDAL.cs" />
+    <Compile Include="Masters\BaseTaxMasterDAL.cs" />
+    <Compile Include="Masters\BaseTillSettingsDAL.cs" />
+    <Compile Include="Masters\BaseUsersDAL.cs" />
+    <Compile Include="Masters\BaseWarehouseMasterDAL.cs" />
+    <Compile Include="Masters\BaseWarehouseTypeMasterDAL.cs" />
+    <Compile Include="Masters\BaseCustomerGroupDAL.cs" />
+    <Compile Include="Masters\BaseVendorGroupMasterDAL.cs" />
+    <Compile Include="Masters\BaseVendorMasterDAL.cs" />
+    <Compile Include="Masters\BaseYearMasterDAL.cs" />
+    <Compile Include="PatchForm\BasePatchFormDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\BaseCommonReportDAL.cs" />
+    <Compile Include="Reports\BaseCurrentStockReportDAL.cs" />
+    <Compile Include="Reports\BaseDailySalesReportDAL.cs" />
+    <Compile Include="Reports\BaseStockMovementReportDAL.cs" />
+    <Compile Include="Reports\BaseUserReportDAL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\BaseInvoiceTransactionDAL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\BaseSalesExchangeTransactionDAL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\BaseSalesReturnTransactionDAL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\BaseStockAdjustmentTransactionDAL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\BaseStockReceiptTransactionDAL.cs" />
+    <Compile Include="Reports\DayWiseTransaction\BaseStockReturnTransactionDAL.cs" />
+    <Compile Include="SalesTarget\BaseSalesTargetDAL.cs" />
+    <Compile Include="SyncSettings\BaseSyncSettingsDAL.cs" />
+    <Compile Include="SyncSettings\ManualMasterSyncAbsDAL.cs" />
+    <Compile Include="SyncSettings\MasterDataSyncAbsDAL.cs" />
+    <Compile Include="Transactions\Cardex\CardexLocation\BaseCardexLocationDAL.cs" />
+    <Compile Include="Transactions\CouponReceipt\BaseCouponReceiptDAL.cs" />
+    <Compile Include="Transactions\CouponTransfer\BaseCouponTransferDAL.cs" />
+    <Compile Include="Transactions\NonTradingItemStock\BaseNonTradingItemStockDAL.cs" />
+    <Compile Include="Transactions\POS\BaseAPI_SalesOrderDAL.cs" />
+    <Compile Include="Transactions\POS\BaseOnAccountPaymentDAL.cs" />
+    <Compile Include="Transactions\POS\BaseSalesOrderDAL.cs" />
+    <Compile Include="Transactions\POS\BaseWebSalesOrderDAL.cs" />
+    <Compile Include="Transactions\PriceChange\BasePriceChangeDAL.cs" />
+    <Compile Include="Transactions\Promotions\BaseDiscountMasterDAL.cs" />
+    <Compile Include="Transactions\POS\BaseCouponDetailDAL.cs" />
+    <Compile Include="Transactions\POS\BaseGiftvoucherDetailsDAL.cs" />
+    <Compile Include="Transactions\POS\BaseInvoiceCashDetailsDAL.cs" />
+    <Compile Include="Transactions\POS\BaseSalesExchangeDAL.cs" />
+    <Compile Include="Transactions\POS\BaseSalesReturnHeaderDAL.cs" />
+    <Compile Include="Transactions\Promotions\BasePromotionMappingDAL.cs" />
+    <Compile Include="Transactions\Promotions\BaseWNPromotionDAL.cs" />
+    <Compile Include="Transactions\StockReceipt\BaseStockReceiptDAL.cs" />
+    <Compile Include="Transactions\StockRequest\BaseStockRequestDAL.cs" />
+    <Compile Include="Transactions\StockReturn\BaseStockReturnDAL.cs" />
+    <Compile Include="Transactions\Stocks\BaseInventoryCountingDAL.cs" />
+    <Compile Include="Transactions\Stocks\BaseOpeningStockDAL.cs" />
+    <Compile Include="Transactions\Stocks\BaseStockAdjustmentDAL.cs" />
+    <Compile Include="Transactions\Coupen\BaseCouponMasterDAL.cs" />
+    <Compile Include="Transactions\CustomerSpecialPrice\BaseCustomerSpecialPriceMasterDAL.cs" />
+    <Compile Include="Transactions\POSOperations\BaseCashInCashOutDAL.cs" />
+    <Compile Include="Transactions\POS\BaseCardDetailsDAL.cs" />
+    <Compile Include="Transactions\POS\BaseDenominationDAL.cs" />
+    <Compile Include="Transactions\POS\BaseInvoiceDAL.cs" />
+    <Compile Include="Transactions\POS\BasePaymentTypeDAL.cs" />
+    <Compile Include="Transactions\POS\BasePromotionPriorityDAL.cs" />
+    <Compile Include="Transactions\POS\BaseTransactionStatusDAL.cs" />
+    <Compile Include="Transactions\Pricing\BasePricePointDAL.cs" />
+    <Compile Include="Transactions\Stocks\BaseStockRequestDAL.cs" />
+    <Compile Include="Transactions\Stocks\BaseStockReturnDAL.cs" />
+    <Compile Include="Transactions\Stocks\BaseStockStagingDAL.cs" />
+    <Compile Include="Transactions\Tailoring\BaseTailoringOrderDAL.cs" />
+    <Compile Include="Transactions\TransactionLogs\BaseTransactionLogsDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EasyBizRequest\EasyBizRequest.csproj">
+      <Project>{c396e24d-df56-4a4c-acbf-29a65c4e5b2e}</Project>
+      <Name>EasyBizRequest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBizResponse\EasyBizResponse.csproj">
+      <Project>{4e26aa9e-b1e0-49ca-b5b7-6bd269f123e6}</Project>
+      <Name>EasyBizResponse</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

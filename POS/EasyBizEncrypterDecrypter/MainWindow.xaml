@@ -1,0 +1,86 @@
+﻿<dx:ThemedWindow x:Class="EasyBizEncrypterDecrypter.MainWindow"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" 
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"    
+    Title="Encrypt-Decrypt" Height="300" Width="500" dx:ThemeManager.ThemeName="Office2016White;Touch"  WindowStartupLocation="CenterScreen"  WindowState="Normal" WindowStyle="SingleBorderWindow" BorderThickness="0"  Padding="0" ResizeMode="NoResize" Topmost="False" FontFamily="Myriad Pro"  >
+    <Grid Background="#FF374F8D">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>       
+        <dxlc:LayoutItem Label=" Input String" FontSize="12" Foreground="White" Grid.Row="0">
+            <dxe:TextEdit Name="txtFirst" Grid.Row="0" Height="40" NullText="Input Text" />
+        </dxlc:LayoutItem>
+        <dxlc:LayoutItem Label="Output String" FontSize="12" Foreground="White" Grid.Row="1">
+            <dxe:TextEdit Name="txtSecond" Grid.Row="1"  Height="40" NullText="Output Text"  />
+        </dxlc:LayoutItem>
+
+       
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10" Grid.Row="2" >
+
+            <Button Name="btnEncrypt"  Click="Encrypt_Click" dx:ThemeManager.ThemeName="Seven" Height="40" Width="140"  Margin="0,0,10,0">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="5" Opacity="1" ShadowDepth="4" Color="#FF6197D5"/>
+
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Canvas>
+                            <Border Background="#FF6197D5"   CornerRadius="2">
+                                <Grid Width="140" Height="40" />
+                            </Border>
+                            <TextBlock Text="Encrypt" Canvas.Left="48" Canvas.Top="10" FontFamily="Trebuchet MS" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Canvas>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Name="btnDecrypt" Click="Decrypt_Click"  dx:ThemeManager.ThemeName="Seven" Height="40" Width="140"  Margin="0,0,10,0">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="5" Opacity="1" ShadowDepth="4" Color="#FF6197D5"/>
+
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Canvas>
+                            <Border Background="#FFC94343"   CornerRadius="2">
+                                <Grid Width="140" Height="40" />
+                            </Border>
+                            <TextBlock Text="Decrypt" Canvas.Left="48" Canvas.Top="10" FontFamily="Trebuchet MS" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Canvas>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
+
+
+        
+    </Grid>
+   </dx:ThemedWindow>
+ 
